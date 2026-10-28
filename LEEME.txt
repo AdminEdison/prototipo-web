@@ -1,0 +1,51 @@
+ENVATUB S.A. — DEMOSTRACIÓN DE PORTADA REDISEÑADA
+================================================
+
+ABRIR LA DEMO:
+1. Extrae el archivo ZIP completo.
+2. Abre la carpeta «envatub_demo».
+3. Haz doble clic en «index.html». Se abrirá en Chrome, Edge o Firefox.
+4. Recomendado: en el navegador presiona F11 para mostrarlo en pantalla completa durante la presentación.
+
+NO NECESITAS WORDPRESS NI UN SERVIDOR para ver este prototipo.
+No cambies la ubicación de css/, js/ ni assets/: son carpetas utilizadas por index.html.
+
+QUÉ FUNCIONA:
+- Carrusel de portada con 4 imágenes y mensajes, flechas, indicadores y avance automático cada 6,5 segundos.
+- El carrusel también permite deslizar en pantallas táctiles y pausar/reanudar el avance.
+- Navegación a secciones con desplazamiento suave.
+- Diseño adaptable a pantallas móviles.
+- Menú para dispositivos móviles.
+- Filtros de productos (Todos, Envases, Industriales, Papel).
+- Tarjetas de productos con ficha informativa.
+- Formulario de cotización de demostración: prepara un correo en el programa de correo del equipo.
+- Enlaces a las secciones reales de envatub.com (requieren Internet).
+- Botón para volver al principio y animaciones discretas.
+
+IMPORTANTE:
+- No es el WordPress ni el sitio publicado, sino un prototipo independiente.
+- Las imágenes son recortes ilustrativos de la maqueta conceptual aprobada, NO fotografías verificadas de la empresa.
+- La marca gráfica del encabezado es una recreación conceptual; reemplazar por el logotipo oficial antes de publicar.
+- La lista de clientes usa nombres que aparecen actualmente en envatub.com (sin copiar ni inventar logotipos).
+- El formulario NO usa base de datos y NO envía automáticamente solicitudes: abre el programa de correo.
+- Los tipos de envases y el texto son una reorganización resumida del contenido público de ENVATUB.
+- Antes de publicar deben validarse datos de contacto, fotografías, permisos, textos técnicos y enlaces.
+- Las fuentes opcionales se descargan desde Google Fonts si el equipo tiene Internet;
+  sin conexión se usan fuentes locales del sistema y el prototipo sigue funcionando.
+
+ARCHIVOS:
+index.html       Estructura de la portada
+css/styles.css   Estilos y diseño adaptable
+js/main.js       Interacciones y navegación
+assets/          Ilustraciones locales para demostración
+
+SIGUIENTE ETAPA:
+Una vez aprobado el diseño, integrar la maqueta a WordPress, ajustar el tema/constructor,
+reemplazar los recursos ilustrativos por originales y conectar el formulario de cotización.
+
+PERSONALIZAR CARRUSEL:
+- Edita las cuatro etiquetas <article class="hero-slide"> dentro de index.html.
+- Para sustituir imágenes, coloca archivos en assets/ y modifica el atributo src de cada diapositiva.
+- Para cambiar el intervalo, edita la constante delay = 6500 de js/main.js.
+- Para añadir otra diapositiva, copia un article, actualiza su data-slide y añade otro indicador data-hero-go.
+- El botón de pausa evita el cambio automático durante la presentación.

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fb650c">
+  <meta name="description" content="Propuesta de rediseño de la portada de ENVATUB S.A. — demostración interactiva.">
+  <title>ENVATUB S.A. | Nueva portada — Demo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m-7 7 7-7 7 7"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5ZM3 7v10l9 5 9-5V7M12 12v10"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-15 3-15 11a5 5 0 0 0 5 5c8 0 11-6 10-16ZM4 21c3-7 7-10 13-13"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M9 3h6l1 3 3 1 3-1 2 5-3 2v3l2 2-3 4-3-1-3 1-1 3H9l-1-3-3-1-3 1-2-4 3-2v-3L0 11l2-5 3 1 3-1 1-3Z" transform="translate(2 -1) scale(.83)"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h4l1 5-3 2c2 4 3 5 6 6l2-3 5 1v4c0 2-2 3-4 3A15 15 0 0 1 3 7c0-2 1-4 3-4Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="5"/><path d="M5 8h14M5 16h14"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+  </svg>
+  <div class="demo-flag" role="note">PROTOTIPO DE REDISEÑO <span>•</span> NO ES EL SITIO OFICIAL</div>
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="ENVATUB S.A., volver al inicio">
+        <span class="brand__seal" aria-hidden="true"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="23" fill="currentColor"/><g fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><ellipse cx="22" cy="21" rx="15" ry="7" transform="rotate(-19 22 21)"/><path d="m11 15 8 16m9-18 7 17M8 23c9 1 20-3 28-10"/></g></svg></span>
+        <span class="brand__text"><strong>ENVATUB<span>S.A.</span></strong><small>SOLUCIONES EN CARTÓN Y PAPEL</small></span>
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <a class="nav__link is-active" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#productos">Productos</a>
+        <a class="nav__link" href="#marcas">Marcas</a>
+        <a class="nav__link" href="#nosotros">Nosotros</a>
+        <a class="nav__link" href="#clientes">Clientes</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+      </nav>
+      <div class="header__actions">
+        <button class="button button--orange button--small" data-open-quote>Solicitar cotización <svg class="icon"><use href="#i-arrow"/></svg></button>
+        <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú"><svg class="icon"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    
+<section class="hero hero--carousel"
+  aria-labelledby="hero-title"
+  aria-roledescription="carrusel"
+  aria-label="Presentación de soluciones ENVATUB"
+  id="heroCarousel">
+
+  <div class="hero__glow"></div>
+
+  <div class="hero-carousel__slides" id="heroSlides">
+
+    <!-- DIAPOSITIVA 1: ENVATUB -->
+    <article class="hero-slide is-active"
+      data-slide="0"
+      aria-roledescription="diapositiva"
+      aria-label="1 de 4"
+      aria-hidden="false">
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal is-visible">
+
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__line"></span>
+            ENVATUB S.A.
+          </p>
+
+          <h1 id="hero-title" class="hero__headline">
+            Líderes en envases<br>
+            y tubos <span>cilíndricos<br>de cartón.</span>
+          </h1>
+
+          <p class="hero__lead">
+            Somos una empresa líder en el mercado ecuatoriano
+            dedicada a la conversión de papeles absorbentes,
+            tubos y envases cilíndricos de cartón.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="button button--orange" href="#productos">
+              Personaliza tu envase
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+
+            <button type="button"
+              class="button button--outline-light"
+              data-open-quote>
+              Solicitar cotización
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+          <p class="hero__proof">
+            <span class="hero__proof-dot"></span>
+            Industria ecuatoriana
+            <span class="hero__separator">/</span>
+            Desde 2011
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__visual-shape"></div>
+
+          <img src="assets/envapack.png"
+            alt="Tubos y envases cilíndricos de cartón"
+            fetchpriority="high">
+
+          <div class="hero__label hero__label--top">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-box"/></svg>
+            </span>
+            <span>Empaques<br><strong>personalizados</strong></span>
+          </div>
+
+          <div class="hero__label hero__label--bottom">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-leaf"/></svg>
+            </span>
+            <span>Materiales<br><strong>reciclables</strong></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DIAPOSITIVA 2: MELOPAPER -->
+    <article class="hero-slide"
+      data-slide="1"
+      aria-roledescription="diapositiva"
+      aria-label="2 de 4"
+      aria-hidden="true"
+      inert>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__line"></span>
+            MELOPAPER
+          </p>
+
+          <h2 class="hero__headline">
+            Productos de línea<br>
+            de limpieza,<br>
+            <span>aseo y bienestar.</span>
+          </h2>
+
+          <p class="hero__lead">
+            Nuestra línea incluye papel higiénico doméstico
+            e industrial, servilletas, toallas de mano,
+            toalla Z y limpión.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="button button--orange" href="#marcas">
+              Conoce todo nuestro catálogo
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+
+            <button type="button"
+              class="button button--outline-light"
+              data-open-quote>
+              Solicitar cotización
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+          <p class="hero__proof">
+            <span class="hero__proof-dot"></span>
+            Limpieza, aseo y bienestar
+            <span class="hero__separator">/</span>
+            Melopaper
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__visual-shape"></div>
+
+          <img src="assets/producto-papel.webp"
+            alt="Productos de papel absorbente"
+            loading="lazy">
+
+          <div class="hero__label hero__label--top">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-box"/></svg>
+            </span>
+            <span>Productos de<br><strong>limpieza</strong></span>
+          </div>
+
+          <div class="hero__label hero__label--bottom">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-spark"/></svg>
+            </span>
+            <span>Aseo y<br><strong>bienestar</strong></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DIAPOSITIVA 3: PAPEL INSTITUCIONAL -->
+    <article class="hero-slide"
+      data-slide="2"
+      aria-roledescription="diapositiva"
+      aria-label="3 de 4"
+      aria-hidden="true"
+      inert>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__line"></span>
+            4 LETRAS
+          </p>
+
+          <h2 class="hero__headline">
+            Papel <span>institucional.</span>
+          </h2>
+
+          <p class="hero__lead">
+            Soluciones de papel institucional en tamaños
+            XS y XL, pensadas para las necesidades de
+            diferentes entornos.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="button button--orange" href="#marcas">
+              Más información
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+
+            <button type="button"
+              class="button button--outline-light"
+              data-open-quote>
+              Solicitar cotización
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+          <p class="hero__proof">
+            <span class="hero__proof-dot"></span>
+            Papel institucional
+            <span class="hero__separator">/</span>
+            Formatos XS y XL
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__visual-shape"></div>
+
+          <img src="assets/4letras.png"
+            alt="Productos de papel institucional"
+            loading="lazy">
+
+          <div class="hero__label hero__label--top">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-settings"/></svg>
+            </span>
+            <span>Papel<br><strong>institucional</strong></span>
+          </div>
+
+          <div class="hero__label hero__label--bottom">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-check"/></svg>
+            </span>
+            <span>Formatos<br><strong>XS y XL</strong></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DIAPOSITIVA 4: EMPRESA -->
+    <article class="hero-slide"
+      data-slide="3"
+      aria-roledescription="diapositiva"
+      aria-label="4 de 4"
+      aria-hidden="true"
+      inert>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow__line"></span>
+            SOBRE ENVATUB S.A.
+          </p>
+
+          <h2 class="hero__headline">
+            Empresa ecuatoriana<br>
+            con los mejores<br>
+            <span>estándares de calidad.</span>
+          </h2>
+
+          <p class="hero__lead">
+            ENVATUB S.A. es una empresa ecuatoriana
+            constituida en 2011, dedicada a la fabricación
+            y comercialización de tubos, envases de cartón
+            y absorbentes.
+          </p>
+
+          <div class="hero__buttons">
+            <a class="button button--orange" href="#nosotros">
+              Leer más
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+
+            <button type="button"
+              class="button button--outline-light"
+              data-open-quote>
+              Solicitar cotización
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+          <p class="hero__proof">
+            <span class="hero__proof-dot"></span>
+            Industria ecuatoriana
+            <span class="hero__separator">/</span>
+            Desde 2011
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__visual-shape"></div>
+
+          <img src="assets/fabrica.webp"
+            alt="Imagen conceptual de una planta industrial"
+            loading="lazy">
+
+          <div class="hero__label hero__label--top">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-package"/></svg>
+            </span>
+            <span>Industria<br><strong>ecuatoriana</strong></span>
+          </div>
+
+          <div class="hero__label hero__label--bottom">
+            <span class="hero__label-icon">
+              <svg class="icon"><use href="#i-leaf"/></svg>
+            </span>
+            <span>Calidad e<br><strong>innovación</strong></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- CONTROLES DEL CARRUSEL -->
+  <div class="container hero-carousel__controls"
+    aria-label="Controles del carrusel">
+
+    <div class="hero-carousel__pagination">
+
+      <span class="hero-carousel__counter"
+        id="heroCounter"
+        aria-hidden="true">
+        <strong>01</strong> <span>/ 04</span>
+      </span>
+
+      <div class="hero-carousel__dots"
+        aria-label="Seleccionar diapositiva">
+
+        <button type="button"
+          class="hero-carousel__dot is-current"
+          data-hero-go="0"
+          aria-label="Ver diapositiva 1: envases de cartón"
+          aria-current="true">
+          <span></span>
+        </button>
+
+        <button type="button"
+          class="hero-carousel__dot"
+          data-hero-go="1"
+          aria-label="Ver diapositiva 2: limpieza y bienestar"
+          aria-current="false">
+          <span></span>
+        </button>
+
+        <button type="button"
+          class="hero-carousel__dot"
+          data-hero-go="2"
+          aria-label="Ver diapositiva 3: papel institucional"
+          aria-current="false">
+          <span></span>
+        </button>
+
+        <button type="button"
+          class="hero-carousel__dot"
+          data-hero-go="3"
+          aria-label="Ver diapositiva 4: empresa ENVATUB"
+          aria-current="false">
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- FLECHAS PARA NAVEGACIÓN MANUAL -->
+    <div class="hero-carousel__actions">
+
+      <button type="button"
+        class="hero-carousel__arrow hero-carousel__arrow--prev"
+        data-hero-prev
+        aria-label="Imagen anterior"
+        title="Imagen anterior">
+        <svg class="icon"><use href="#i-arrow"/></svg>
+      </button>
+
+      <button type="button"
+        class="hero-carousel__arrow"
+        data-hero-next
+        aria-label="Imagen siguiente"
+        title="Imagen siguiente">
+        <svg class="icon"><use href="#i-arrow"/></svg>
+      </button>
+
+    </div>
+  </div>
+
+  <span class="sr-only"
+    id="heroStatus"
+    aria-live="polite"
+    aria-atomic="true"></span>
+
+  <div class="hero__bottom-line"></div>
+
+</section>
+
+    <section class="benefits" aria-label="Características de ENVATUB">
+      <div class="container benefits__grid">
+        <div class="benefit reveal"><span class="benefit__icon"><svg class="icon"><use href="#i-package"/></svg></span><div><strong>Hechos a tu medida</strong><p>Dimensiones, acabados y diseños personalizados.</p></div></div>
+        <div class="benefit reveal"><span class="benefit__icon"><svg class="icon"><use href="#i-check"/></svg></span><div><strong>Calidad en cada detalle</strong><p>Soluciones para múltiples industrias y aplicaciones.</p></div></div>
+        <div class="benefit reveal"><span class="benefit__icon"><svg class="icon"><use href="#i-leaf"/></svg></span><div><strong>Compromiso ambiental</strong><p>Alternativas en cartón y materiales biodegradables.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section section--products" id="productos" aria-labelledby="products-title">
+      <div class="container">
+
+        <div class="section-heading section-heading--stacked reveal">
+          <div>
+            <p class="eyebrow">NUESTROS PRODUCTOS</p>
+
+            <h2 id="products-title">
+              Soluciones para <span>cada industria.</span>
+            </h2>
+
+            <p class="products-description">
+              Un portafolio adaptable a cada necesidad: desde envases
+              de presentación hasta componentes para producción industrial.
+            </p>
+          </div>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar productos">
+          <button class="filter is-selected" type="button" data-filter="todos" aria-pressed="true">Todos los productos</button>
+          <button class="filter" type="button" data-filter="envases" aria-pressed="false">Envases</button>
+          <button class="filter" type="button" data-filter="industriales" aria-pressed="false">Industriales</button>
+          <button class="filter" type="button" data-filter="papel" aria-pressed="false">Papel y absorbentes</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <button class="product-card reveal" type="button" data-group="envases" data-product="alimentos">
+            <span class="product-card__photo"><img src="assets/producto-alimentos.webp" alt="Envases ilustrativos de cartón para alimentos"><span class="product-card__tag">01 / Envases</span></span>
+            <span class="product-card__footer"><span><strong>Industria alimenticia</strong><small>Presentación y conservación</small></span><span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+          <button class="product-card reveal" type="button" data-group="envases" data-product="farmaceutica">
+            <span class="product-card__photo"><img src="assets/producto-cosmetica.webp" alt="Presentaciones ilustrativas de envases para productos de cuidado y salud"><span class="product-card__tag">02 / Envases</span></span>
+            <span class="product-card__footer"><span><strong>Farmacéutica y cuidado</strong><small>Empaques especializados</small></span><span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+          <button class="product-card reveal" type="button" data-group="industriales" data-product="tubos">
+            <span class="product-card__photo"><img src="assets/producto-industrial.webp" alt="Tubos cilíndricos de cartón, referencia visual"><span class="product-card__tag">03 / Industrial</span></span>
+            <span class="product-card__footer"><span><strong>Tubos industriales</strong><small>Resistencia y versatilidad</small></span><span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+          <button class="product-card reveal" type="button" data-group="envases" data-product="promocionales">
+            <span class="product-card__photo"><img src="assets/producto-promocional.webp" alt="Envases promocionales personalizados, ilustración conceptual"><span class="product-card__tag">04 / Envases</span></span>
+            <span class="product-card__footer"><span><strong>Promocionales</strong><small>Tu marca, tu presentación</small></span><span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+          <button class="product-card reveal" type="button" data-group="papel" data-product="papel">
+            <span class="product-card__photo"><img src="assets/producto-papel.webp" alt="Rollos de papel absorbente, ilustración conceptual"><span class="product-card__tag">05 / Papel</span></span>
+            <span class="product-card__footer"><span><strong>Papel absorbente</strong><small>Hogar, comercio e industria</small></span><span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+          <button class="product-card product-card--special reveal" type="button" data-group="envases" data-product="licorera">
+            <span class="product-card__special-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+            <span class="product-card__special-title">Cada producto merece un empaque extraordinario.</span>
+            <span class="product-card__special-bottom">Industria licorera y más <span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span>
+          </button>
+        </div>
+        <p class="products-note">Selecciona una categoría para ver su información. <a href="https://envatub.com/productos/" target="_blank" rel="noopener noreferrer">Consultar el catálogo actual ↗</a></p>
+      </div>
+    </section>
+
+    <section class="section brands" id="marcas" aria-labelledby="brands-title">
+      <div class="container brands__grid">
+        <div class="brands__intro reveal"><p class="eyebrow eyebrow--on-dark">NUESTRAS MARCAS</p><h2 id="brands-title">Una empresa.<br><span>Tres formas de innovar.</span></h2><p>Marcas especializadas en soluciones de empaque, papeles absorbentes y productos institucionales.</p><a class="text-link text-link--light" href="https://envatub.com/marcas/" target="_blank" rel="noopener noreferrer">Conoce nuestras marcas <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <div class="brands__cards">
+          <a class="brand-card reveal" href="https://envatub.com/envapack/" target="_blank" rel="noopener noreferrer" aria-label="Conocer Envapack"><div class="brand-card__head"><span class="brand-card__logo brand-card__logo--envapack">ENVAPACK</span><span class="brand-card__subtitle">TUBOS Y ENVASES</span></div><img src="assets/marca-envapack.webp" alt="Envases cilíndricos ilustrativos"><span class="brand-card__bottom">Conocer la marca <span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></a>
+          <a class="brand-card reveal" href="https://envatub.com/melopaper/" target="_blank" rel="noopener noreferrer" aria-label="Conocer Melopaper"><div class="brand-card__head"><span class="brand-card__logo brand-card__logo--melo">Melopaper</span><span class="brand-card__subtitle">LÍNEA DE ABSORBENTES</span></div><img src="assets/marca-melopaper.webp" alt="Línea de productos de papel ilustrativa"><span class="brand-card__bottom">Conocer la marca <span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></a>
+          <a class="brand-card reveal" href="https://envatub.com/4-letras/" target="_blank" rel="noopener noreferrer" aria-label="Conocer 4 Letras"><div class="brand-card__head"><span class="brand-card__logo brand-card__logo--letras">4<span>LETRAS</span></span><span class="brand-card__subtitle">PAPEL INSTITUCIONAL</span></div><img src="assets/marca-4letras.webp" alt="Productos institucionales ilustrativos"><span class="brand-card__bottom">Conocer la marca <span class="round-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__photo reveal"><img src="assets/fabrica.webp" alt="Imagen conceptual de una planta industrial ENVATUB; no representa una fotografía verificada"><div class="about__photo-note"><strong>Industria ecuatoriana</strong><span>Diseñamos soluciones que conectan con tus proyectos.</span></div></div>
+        <div class="about__content reveal"><p class="eyebrow">SOBRE NOSOTROS</p><h2 id="about-title">Pasión por transformar <span>el cartón en oportunidades.</span></h2><p>Desde 2011, ENVATUB S.A. desarrolla soluciones para el mercado ecuatoriano en tubos cilíndricos de cartón, envases y papeles absorbentes.</p><p>Combinamos experiencia técnica, personalización y atención a las necesidades de cada cliente.</p><div class="about__chips"><span><svg class="icon"><use href="#i-check"/></svg> Atención personalizada</span><span><svg class="icon"><use href="#i-check"/></svg> Diversas industrias</span><span><svg class="icon"><use href="#i-check"/></svg> Compromiso con la calidad</span></div><a class="button button--dark" href="https://envatub.com/quienes-somos/" target="_blank" rel="noopener noreferrer">Conoce nuestra historia <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="clients" id="clientes" aria-labelledby="clients-title"><div class="container clients__inner"><div class="clients__heading"><p class="eyebrow">NUESTROS CLIENTES</p><h2 id="clients-title">Marcas que aparecen en nuestro portafolio</h2></div><div class="clients__names" aria-label="Clientes mencionados en el sitio actual"><span>CONFITECA</span><span>PACARI</span><span>BIOBAC</span><span>ECUAFARMA</span><span>FARMAVE</span><span>REPÚBLICA DEL CACAO</span></div></div></section>
+
+    <section class="sustainability" aria-labelledby="sust-title"><div class="container sustainability__grid"><div class="sustainability__copy reveal"><p class="eyebrow eyebrow--light">NUESTRO COMPROMISO</p><h2 id="sust-title">El futuro se construye <span>con responsabilidad.</span></h2><p>Apostamos por materiales de cartón y alternativas biodegradables, con soluciones pensadas para las necesidades de cada industria.</p><a class="button button--outline-light" href="https://envatub.com/quienes-somos/" target="_blank" rel="noopener noreferrer">Conoce nuestra filosofía <svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="sustainability__visual reveal"><img src="assets/sostenibilidad.webp" alt="Tubo de cartón rodeado de hojas verdes, imagen conceptual"><div class="sustainability__float"><svg class="icon"><use href="#i-leaf"/></svg><span>Materiales con propósito</span></div></div></div></section>
+
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-section__inner"><div class="reveal"><p class="eyebrow">HABLEMOS DE TU PROYECTO</p><h2 id="contact-title">Tu próximo empaque <span>comienza aquí.</span></h2><p>Cuéntanos qué necesitas y exploremos juntos la solución adecuada para tu producto.</p></div><button type="button" class="button button--orange button--large" data-open-quote>Solicitar una cotización <svg class="icon"><use href="#i-arrow"/></svg></button></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer__top"><div><div class="footer__brand">ENVATUB<span>S.A.</span></div><p>Soluciones en tubos, envases de cartón y productos de papel.</p></div><div><h3>Explorar</h3><a href="#productos">Productos</a><a href="#marcas">Marcas</a><a href="#nosotros">Nuestra empresa</a></div><div><h3>Contacto</h3><a href="mailto:info@envatub.com"><svg class="icon"><use href="#i-mail"/></svg> info@envatub.com</a><a href="tel:+593985091741"><svg class="icon"><use href="#i-phone"/></svg> 098 509 1741</a><p class="footer__address"><svg class="icon"><use href="#i-pin"/></svg> El Rosal, 2da Transversal 238 y Panamericana Sur, Ecuador</p></div></div><div class="container footer__bottom"><span>© <span id="year">2026</span> ENVATUB S.A. — Propuesta conceptual.</span><span>Demostración interactiva • No reemplaza el sitio oficial</span></div></footer>
+
+  <button class="back-top" type="button" aria-label="Volver arriba"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+
+  <dialog class="dialog" id="productDialog" aria-labelledby="productDialogTitle"><button type="button" class="dialog__close" data-close-dialog aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button><div class="dialog__body"><p class="eyebrow">SOLUCIÓN ENVATUB</p><h2 id="productDialogTitle">Producto</h2><p id="productDialogDescription"></p><div class="dialog__actions"><button type="button" class="button button--orange" id="productQuote">Consultar este producto <svg class="icon"><use href="#i-arrow"/></svg></button><a class="text-link" href="https://envatub.com/productos/" target="_blank" rel="noopener noreferrer">Ver página actual ↗</a></div></div></dialog>
+
+  <dialog class="dialog dialog--quote" id="quoteDialog" aria-labelledby="quoteTitle"><button type="button" class="dialog__close" data-close-dialog aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button><div class="dialog__body"><p class="eyebrow">CONTACTO / COTIZACIONES</p><h2 id="quoteTitle">Hablemos de tu proyecto.</h2><p>Completa los datos para preparar un correo de consulta. <strong>Esta maqueta no envía información a una base de datos.</strong></p><form id="quoteForm"><div class="form-grid"><label>Nombre completo <span>*</span><input name="nombre" autocomplete="name" required placeholder="Tu nombre"></label><label>Empresa <input name="empresa" autocomplete="organization" placeholder="Nombre de la empresa"></label></div><div class="form-grid"><label>Correo electrónico <span>*</span><input type="email" name="correo" autocomplete="email" required placeholder="nombre@empresa.com"></label><label>Producto de interés <select id="productSelect" name="producto"><option value="Envases alimenticios">Envases alimenticios</option><option value="Farmacéutica y cuidado">Farmacéutica y cuidado</option><option value="Tubos industriales">Tubos industriales</option><option value="Promocionales">Promocionales</option><option value="Papel absorbente">Papel absorbente</option><option value="Industria licorera">Industria licorera</option><option value="Otro / Por definir">Otro / Por definir</option></select></label></div><label>Cuéntanos qué necesitas <span>*</span><textarea name="mensaje" required rows="4" placeholder="Producto, cantidades y medidas aproximadas..."></textarea></label><button class="button button--orange button--full" type="submit">Preparar correo de consulta <svg class="icon"><use href="#i-arrow"/></svg></button><p class="form-disclaimer">Se abrirá tu aplicación de correo con el mensaje preparado. La versión final podría integrar un formulario real de WordPress.</p></form></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
